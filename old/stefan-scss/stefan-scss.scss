@@ -1,0 +1,267 @@
+/* STRAINJA style*/
+
+
+/* ----> BESTELLEN page <---- */
+
+/* selct list */
+.custom-select {
+	margin: 0 auto;
+}
+/* END: selct list */
+
+
+/* Email section */
+.fls__modal {
+	padding: 50px 0 0 0px;
+	margin: 0 auto;
+}
+/* END: Email section */
+
+/* ----> BESTELLEN page <---- */
+
+
+
+/* =========================================================================== */
+
+
+/* ----> SCHULEN DIE DAS FLS HABEN page <---- */
+
+/* START: Pagination */
+.fls__pagination {
+	ul {
+		li {
+			float: right;
+			&:last-child {
+				margin-right: 8px;
+			}
+		}
+	}
+}
+/* END: Pagination */
+
+/* ----> END: SCHULEN DIE DAS FLS HABEN page <---- */
+
+
+
+/* =========================================================================== */
+
+
+
+
+/* ----> START: BESTELL - LISTE page <---- */
+
+.fls__radio {
+	ul {
+		li {
+		    display: inline-block;
+    		width: 20%
+		}
+	}
+	.textContH {
+		text-align: left;
+		padding-top: 0;
+	}
+}
+/* ----> END: BESTELL - LISTE page <---- */
+
+
+
+
+/* =========================================================================== */
+
+
+
+/* STRAINJA style*/
+
+
+
+
+/* COLORS */
+
+$h1color: #555555;
+$h1line: #707070;
+$bgGrey: #FCFCFC;
+
+/* END: COLORS */
+
+
+
+/* START: GRID */
+
+.grid-800 {
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; 
+}
+
+/* END: GRID */
+
+
+
+/* START: Paddings*/
+
+/* Padding == top == */
+.pt-20 {
+	padding-top: 20px;
+}
+
+.pt-40 {
+	padding-top: 40px;
+}
+
+.pt-50 {
+	padding-top: 50px;
+}
+
+.pt-60 {
+	padding-top: 60px;
+}
+/*END: Padding == top == */
+
+
+/* Padding == bottom == */
+.pb-20 {
+	padding-bottom: 20px;
+}
+
+.pb-40 {
+	padding-bottom: 40px;
+}
+
+.pb-50 {
+	padding-bottom: 50px;
+}
+
+.pb-60 {
+	padding-bottom: 60px;
+}
+/* END: Padding == bottom == */
+
+/* END: Paddings */
+
+
+
+/* START: MArgins*/
+
+/* END: Marign == top == */
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mt-40 {
+	margin-top: 40px;
+}
+
+.mt-50 {
+	margin-top: 50px;
+}
+
+.mt-60 {
+	margin-top: 60px;
+}
+
+.mt-80 {
+	margin-top: 80px;
+}
+/* END: Marign == top == */
+
+
+
+/* Marign == bottom == */
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.mb-60 {
+	margin-bottom: 60px;
+}
+/* END: Marign == bottom == */
+
+/* END: Margins */
+
+
+.bg-grey {
+	background-color: $bgGrey;
+}
+
+
+h1 {
+	color: $h1color;
+	font-size: 32px;
+	text-align: center;
+	letter-spacing: 0.08em;
+	line-height: 46px;
+    font-weight: lighter;
+}
+
+h2 {
+	color: $h1color;
+	font-size: 16px;
+	text-align: left;
+	letter-spacing: 0.025em;
+	line-height: 26px;
+	font-weight: lighter;
+}
+
+
+header {
+	text-align: center;
+	ul {
+		li {
+			display: inline-block;
+			border: solid 1px $h1line;
+			padding: 5px;
+		}
+	}
+}
+
+
+.title-container {
+	border-bottom: solid 1px $h1line;
+	padding-bottom: 20px;
+}
+
+
+.textContH {
+	text-align: center;
+	padding-top: 40px;
+	p {
+	    font-size: 16px;
+	    line-height: 1.5;
+	    color: $h1color;
+	    font-weight: lighter;
+	    letter-spacing: 0.025em;
+	}
+}
+
+
+
+.info-finish {
+	li {
+		display: inline-block;
+   		width: 100%;
+   		margin-bottom: 30px;
+		p {
+			font-size: 16px;
+			font-weight: lighter;
+			line-height: 0.026em;
+			letter-spacing: 0.025em;
+			color: $h1color;
+			span {
+				font-weight: normal;
+				letter-spacing: 0.024em;
+				margin-left: 25px;
+			}
+		}
+	}
+}
