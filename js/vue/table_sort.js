@@ -1,5 +1,3 @@
-
-
 var table = new Vue({
     el: '#table',
     data: {
@@ -101,7 +99,6 @@ var table = new Vue({
           if(index >= start && index < end) return true;
         });
         // END: Sort function
-        
       },
       
 
@@ -109,11 +106,13 @@ var table = new Vue({
       // Filter COLOR
       filteredItems: function() {
         let checkedFilter = [];
-        
-        // IF click on color filter show clicked filter rows
-        if (this.filterColor !== '' && this.filterLabel !== '' && this.filterBuilding !== '') {
+
+          // IF click on color filter show clicked filter rows
+        if (this.filterColor !== '' || this.filterLabel.length > 0 || this.filterBuilding.length > 0) {
           this.rows.forEach( item => {
-            if (this.filterColor === item.farbe || this.filterLabel.includes(item.laschentyp) || this.filterBuilding.includes(item.gebaude)) {
+            if ((this.filterColor === '' || (this.filterColor !== '' && this.filterColor === item.farbe))
+                && (this.filterLabel.length < 1 || (this.filterLabel.length > 0 && this.filterLabel.includes(item.laschentyp)))
+                && (this.filterBuilding.length  < 1 || (this.filterBuilding.length > 0 && this.filterBuilding.includes(item.gebaude)))) {
               checkedFilter.push(item);
             }
           });
@@ -126,10 +125,6 @@ var table = new Vue({
         return checkedFilter; 
       },
       // END: Filter COLOR
-
-
-
-
     
       // Cart function (count total)
       total: function() {
@@ -140,7 +135,6 @@ var table = new Vue({
         return total;
       },
       // END: Cart function (count total)
-
 
       // Validation form Functions
       validateFunct: function () {
@@ -206,7 +200,7 @@ var table = new Vue({
     */
     methods: {
         setColorFilter: function(color) {
-          this.filterColor    = color;
+          this.filterColor = color;
           console.log(color);
         },
 

@@ -112,37 +112,37 @@
 			                    <ul>
 
 			                        <li>
-										<input type="radio" id="radioGreen" name="marker-color" value="Gelb" @click="(setColorFilter('Grün'))">
+										<input type="radio" id="radioGreen" name="marker-color" value="Gelb" @click="setColorFilter('Grün')">
 										<label for="radioGreen"></label>
 									</li>
 
 			                        <li>
-										<input type="radio" id="radioBlue" name="marker-color" value="Blau" @click="(setColorFilter('Blau'))">
+										<input type="radio" id="radioBlue" name="marker-color" value="Blau" @click="setColorFilter('Blau')">
 										<label for="radioBlue"></label>
 									</li>
 
 			                        <li>
-										<input type="radio" id="radioViolet" name="marker-color" value="Violett"  @click="(setColorFilter('Violett'))">
+										<input type="radio" id="radioViolet" name="marker-color" value="Violett"  @click="setColorFilter('Violett')">
 										<label for="radioViolet"></label>
 									</li>
 
 			                        <li>
-										<input type="radio" id="radioOrange" name="marker-color" @click="(setColorFilter('Gelb'))">
+										<input type="radio" id="radioOrange" name="marker-color" @click="setColorFilter('Gelb')">
 										<label for="radioOrange"></label>
 									</li>
 
 			                        <li>
-										<input type="radio" id="radioCrimson" name="marker-color" @click="(setColorFilter('Rot'))">
+										<input type="radio" id="radioCrimson" name="marker-color" @click="setColorFilter('Rot')">
 										<label for="radioCrimson"></label>
 									</li>
 
 			                        <li>
-										<input type="radio" id="radioDarkOrange" name="marker-color" @click="(setColorFilter('Orange'))">
+										<input type="radio" id="radioDarkOrange" name="marker-color" @click="setColorFilter('Orange')">
 										<label for="radioDarkOrange"></label>
 									</li>
 
 			                        <li>
-										<input type="radio" id="radioBordo" name="marker-color" @click="(setColorFilter('Braun'))">
+										<input type="radio" id="radioBordo" name="marker-color" @click="setColorFilter('Braun')">
 										<label for="radioBordo"></label>
 									</li>
 			                       
@@ -236,8 +236,7 @@
 
 		              	<tbody>
 		            
-				            <tr v-for='item in filteredItems.slice(0, 155)'>
-                
+				            <tr v-for="item in filteredItems.slice(0, 155)">
 				                <td>{{ item.rumnummer }}</td>
 				                <td>{{ item.farbe }}</td>
 				                <td>{{ item.laschentyp }}</td>
